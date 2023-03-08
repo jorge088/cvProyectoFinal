@@ -19,7 +19,6 @@ body {
     width: 75%;
     height: 450px;
     padding: 1em .5em;
-    /* background-color: red; */
     display: grid;
     grid-template-columns: 30% 65%;
     grid-template-rows: 55px auto;
@@ -27,6 +26,7 @@ body {
         "mainInformation informationNav"
         "mainInformation information";
     justify-content: space-evenly;
+    font-family: 'Arimo', sans-serif;
 }
 
 /* CV MAIN INFORMATION */
@@ -58,10 +58,15 @@ body {
     font-size: 1.9em;
     font-weight: 900;
 }
-.cvContainer__mainInformation__personalInformation p{
+
+.cvContainer__mainInformation__personalInformation__item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.cvContainer__mainInformation__personalInformation__item p{
     font-size: 1.1em;
     font-weight: 5;
-
 }
 
 /* CV INFORMATION NAV */
@@ -105,7 +110,7 @@ body {
 }
 
 #aboutMe-Information{
-    font-size: 1.1em;
+    font-size: 1.15em;
     color: #2e2e2e;
     display: flex;
     flex-direction: column;
@@ -114,6 +119,7 @@ body {
 }
 
 #experience-Information{
+    font-size: 1.1em;
     color: #2e2e2e;
     display: flex;
     flex-direction: column;
@@ -129,6 +135,7 @@ body {
 }
 
 #education-Information{
+    font-size: 1.1em;
     color: #2e2e2e;
     display: flex;
     flex-direction: column;

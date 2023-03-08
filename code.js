@@ -41,7 +41,7 @@ btnAboutMe.addEventListener('click', () => {
     const aboutMeTemplate = document.querySelector('#aboutMe-Template');
     showTemplateInformation(aboutMeTemplate)
     resetNavInformationActive();
-    btnAboutMe.className.add('activo');
+    btnAboutMe.classList.add('activo');
 });
 
 btnExperience.addEventListener('click', ()=>{
