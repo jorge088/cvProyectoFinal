@@ -9,6 +9,15 @@ const clearInformationContainer = () => {
     informationContainer.innerHTML = '';
 }
 
+//Elimina clase 'activo' del informationNav
+
+const resetNavInformationActive = () =>{
+    btnAboutMe.classList.remove('activo');
+    btnExperience.classList.remove('activo');
+    btnEducation.classList.remove('activo');
+    btnAbilities.classList.remove('activo');
+}
+
 //Mostrar contenido de template.
 
 const showTemplateInformation = (template)=>{
@@ -20,8 +29,8 @@ const showTemplateInformation = (template)=>{
 
 window.addEventListener('DOMContentLoaded', () => {
     const aboutMeTemplate = document.querySelector('#aboutMe-Template');
-    const clon = aboutMeTemplate.content.cloneNode(true);
-    informationContainer.appendChild(clon)
+    btnAboutMe.classList.add('activo')
+    showTemplateInformation(aboutMeTemplate);
 })
 
 
@@ -31,22 +40,30 @@ btnAboutMe.addEventListener('click', () => {
     clearInformationContainer();
     const aboutMeTemplate = document.querySelector('#aboutMe-Template');
     showTemplateInformation(aboutMeTemplate)
+    resetNavInformationActive();
+    btnAboutMe.className.add('activo');
 });
 
 btnExperience.addEventListener('click', ()=>{
     clearInformationContainer();
     const experienceTemplate = document.querySelector('#experience-Template');
-    showTemplateInformation(experienceTemplate)
+    showTemplateInformation(experienceTemplate);
+    resetNavInformationActive();
+    btnExperience.classList.add('activo');
 });
 
 btnEducation.addEventListener('click', ()=>{
     clearInformationContainer();
     const educationTemplate = document.querySelector('#education-Template');
     showTemplateInformation(educationTemplate);
+    resetNavInformationActive();
+    btnEducation.classList.add('activo');
 });
 
 btnAbilities.addEventListener('click', ()=>{
     clearInformationContainer();
     const abilitiesTemplate = document.querySelector('#abilities-Information');
     showTemplateInformation(abilitiesTemplate);
+    resetNavInformationActive();
+    btnAbilities.classList.add('activo')
 })

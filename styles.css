@@ -90,6 +90,9 @@ body {
 .cvContainer__informationNav ul li:hover {
     background-color: #f16969;
 }
+.activo{
+    background-color: #f16969;
+}
 
 
 /* CV INFORMATION SECTION */
