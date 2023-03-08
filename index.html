@@ -1,12 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
     <title>CV</title>
 </head>
+
 <body>
+
+    <div class="cvContainer">
+        <div class="cvContainer__mainInformation">
+            <img class="cvContainer__mainInformation__profilePicture" src="./assets/perfil.jpg" alt="foto de perfil">
+            <div class="cvContainer__mainInformation__personalInformation">
+                <h1>Milton Stone</h1>
+                <p>milton.stone@example.com</p>
+                <p>Argentina</p>
+                <p>7/5/1986</p>
+                <p>(852) 752-9920</p>
+            </div>
+        </div>
+        <div class="cvContainer__informationNav">
+            <ul>
+                <li>Sobre Mi</li>
+                <li>Experiencia</li>
+                <li>Educación</li>
+                <li>Habilidades</li>
+            </ul>
+        </div>
+        <div class="cvContainer__informationSection">
+
+        </div>
+    </div>
+
+    <template id="aboutMe-Template">
+        <div id="aboutMe-Information">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia doloremque eveniet, consequuntur debitis
+                odio ducimus id quisquam reiciendis est voluptate ipsa expedita molestias reprehenderit optio adipisci,
+                a at odit commodi repudiandae non, porro provident hic aliquid? Fugit labore nemo velit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At deserunt quidem blanditiis consectetur
+                beatae totam dolores temporibus fugiat recusandae explicabo. Accusantium eius sint consectetur sequi
+                facilis cupiditate exercitationem dolores. Officiis aperiam facilis dolorem tenetur nihil et amet,
+                cumque dolor reiciendis veritatis soluta libero eaque, beatae optio distinctio. Non consequuntur ducimus
+                voluptatum, asperiores esse voluptas consectetur, quibusdam recusandae totam qui nostrum.</p>
+        </div>
+    </template>
+
+    <template id="experience-Template">
+        <div id="experience-Information">
+            <div class="experienceItem">
+                <h3>Desarrollador web Front End</h3>
+                <p>2022 - Actual</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente quibusdam incidunt fugiat ab
+                    expedita excepturi eius temporibus est, suscipit tempore, voluptates dolores aliquam nisi quis
+                    repellendus aliquid itaque consequuntur optio.</p>
+            </div>
+            <div class="experienceItem">
+                <h3>Delivery de restaurant</h3>
+                <p>2019 - 2021</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente quibusdam incidunt fugiat ab
+                    expedita excepturi eius temporibus est, suscipit tempore, voluptates dolores aliquam nisi quis
+                    repellendus aliquid itaque consequuntur optio.</p>
+            </div>
+        </div>
+    </template>
+
+    <template id="education-Template">
+        <div id="education-Information">
+            <div class="educationItem">
+                <h3>Analista Programador</h3>
+                <p>2021 - Actual</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae neque corporis asperiores
+                    blanditiis similique maiores reprehenderit aspernatur quod consectetur quos sunt adipisci dolor
+                    aliquid, beatae explicabo molestias accusamus? Assumenda corrupti, eaque dolorem ipsam vero
+                    obcaecati fugit ad ducimus explicabo suscipit nihil tempore facilis impedit illum!</p>
+            </div>
+            <div class="educationItem">
+                <h3>Argentina Programa - 1° Etapa</h3>
+                <p>2020 - 2021</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente quibusdam incidunt fugiat ab
+                    expedita excepturi eius temporibus est, suscipit tempore, voluptates dolores aliquam nisi quis
+                    repellendus aliquid itaque consequuntur optio.</p>
+            </div>
+        </div>
+    </template>
     
+    <template id="abilities-Information">
+        <div id="abilities-Information">
+            <div class="abilitiesItem">
+                <img src="./assets/html-Icon.png" alt="html logo">
+                <p>HTML</p>
+            </div>
+            <div class="abilitiesItem">
+                <img src="./assets/css-Icon.png" alt="css logo">
+                <p>CSS</p>
+            </div>
+            <div class="abilitiesItem">
+                <img src="./assets/javascript-Icon.png" alt="javascript logo">
+                <p>Javascript</p>
+            </div>
+            <div class="abilitiesItem">
+                <img src="./assets/git-Icon.png" alt="git logo">
+                <p>Git</p>
+            </div>
+        </div>
+    </template>
+
+    <script src="./code.js"></script>
 </body>
+
 </html>
